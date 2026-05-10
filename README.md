@@ -1,13 +1,6 @@
 # 🫀 Zawał serca, system wczesnego ostrzegania
-
-Miniprojekt zespołu `Wiki-Maliniki` w ramach przedmiotu **Uczenie Maszynowe**.
-
-
-> Jest to dokumentacja miniprojektu, która będzie ewaluować wraz z koniecznymi zmianami.Służy jako skrypt potrzebny do stworzenia projektu. Wraz ze zmianą, będę edytować plan wedle potrzeb i ustaleniu zgody współautorów.
-
-> **UWAGA**: Jak będziemy tworzyć skrypty Pythonowe, to wrzucajmy, to do katalogu `src`. I do `init.py` dodawajmy, to co będzie potrzebne, żeby można było importować funkcje, bez konieczności podawania całej ścieżki. 
-
-> **UWAGA**: Jak zrobimy swój segemnt to dodajcie to do Readme.md
+Projekt zespołu `Wiki-Maliniki` w ramach przedmiotu **Uczenie Maszynowe**.
+Jest to projekt dotyczący wykrywania zawału serca.
 
 ## Spis treści
 - [Cel projektu](#cel-projektu)
@@ -41,9 +34,9 @@ Zbudowanie systemu wczesnego ostrzegania na podstawie zbioru **Stroke Prediction
 
 | # | Model | Osoba | Zakres tuningu |
 |---|-------|-------|----------------|
-| 1 | **Drzewa decyzyjne** | Dawid (C) | głębokość, pruning, ważenie klas |
-| 2 | **Regresja logistyczna** | Wiktoria (B) | regularyzacja, selekcja cech |
-| 3 | **SVM** | Kuba (A) | regularyzacja, kernel, ważenie klas |
+| 1 | **Drzewa decyzyjne** | Dawid  | głębokość, pruning, ważenie klas |
+| 2 | **Regresja logistyczna** | Wiktoria  | regularyzacja, selekcja cech |
+| 3 | **SVM** | Kuba  | regularyzacja, kernel, ważenie klas |
 
 ## Kluczowe metryki
 
@@ -61,10 +54,7 @@ Zbudowanie systemu wczesnego ostrzegania na podstawie zbioru **Stroke Prediction
 │   └── healthcare-dataset-stroke-data.csv
 ├── notebooks/              # Notebooki Jupyter (EDA, modele, eksperymenty)
 │   └── Stroke_Prediction.ipynb
-├── src/                    # Moduły Pythona (preprocessing, modele, metryki)
-│   └── __init__.py
 ├── reports/                # Raport końcowy
-├── slides/                 # Slajdy do prezentacji
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -90,7 +80,7 @@ jupyter notebook notebooks/Stroke_Prediction.ipynb
 
 ## Podział pracy
 
-| Faza | Osoba A (Kuba) | Osoba B (Wiktoria) | Osoba C (Dawid) |
+| Faza | Kuba | Wiktoria | Dawid |
 |------|---------------|-------------------|-----------------|
 | 1. Setup + EDA | Metryki + funkcja kosztu | Wczytanie danych, EDA | Setup repo + README |
 | 2. Preprocessing | Strategia CV | Preprocessing, niezbalansowane klasy | Baseline |
@@ -100,16 +90,17 @@ jupyter notebook notebooks/Stroke_Prediction.ipynb
 
 ## Wyniki
 
-<-- TODO: uzupełnić po zakończeniu eksperymentów -->
+```diff
+- TODO: uzupełnić po zakończeniu eksperymentów -->
 
 | Model | Recall | Precision | F2 | Utility | ROC-AUC |
 |-------|--------|-----------|----|---------|---------|
-| Drzewa decyzyjne | – | – | – | – | – |
-| Regresja logistyczna | – | – | – | – | – |
-| SVM | – | – | – | – | – |
+| Drzewa decyzyjne | 0.84 | 0.097 | 0.332 | -0.55 | 0.719 |
+| Regresja logistyczna | - | – | – | – | – |
+| SVM | 0.84 | 0.10 | 0.34 | -0.52 | 0.84 |
 
 ## Autorzy
 
-- **Kuba** — SVM, metryki, walidacja krzyżowa, porównanie modeli, finalny pipeline, QA
-- **Wiktoria** — wczytanie danych, EDA, preprocessing, niezbalansowane klasy, regresja logistyczna, wykresy
-- **Dawid** — setup repo, baseline, drzewa decyzyjne, raport, slajdy
+- **Jakub Świątczak** — SVM, metryki, walidacja krzyżowa, porównanie modeli, finalny pipeline, QA
+- **Wiktoria Malinowska** — wczytanie danych, EDA, preprocessing, niezbalansowane klasy, regresja logistyczna, wykresy
+- **Dawid Muszyński** — setup repo, baseline, drzewa decyzyjne, raport, slajdy
