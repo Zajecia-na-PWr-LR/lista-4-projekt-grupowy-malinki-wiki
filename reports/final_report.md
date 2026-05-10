@@ -2,18 +2,7 @@
 
 Podstawowa struktura notebooka do projektu klasyfikacji ryzyka udaru.
 
-## 1. Cel i zakres
-
-- Zdefiniuj problem i zmienną celu (`stroke`).
-- Opisz krótko dane i metryki, których będziesz używać.
-
-## 2. Środowisko i konfiguracja
-
-- Opisz użyte biblioteki i wersje.
-- Zapisz założenia dotyczące powtarzalności (np. random seed).
-- Dodaj krótką notatkę o strukturze notebooka.
-
-## 3. Wczytanie i opis danych
+## Wczytanie i opis danych
 
 - Źródło danych.
 - Wymiary zbioru i opis kolumn.
@@ -37,7 +26,7 @@ Dane zostały wzięte z ogólno dostępnego zbioru danych na kaggle - *Stroke Pr
 
 Zbiór danych jest silnie niezbalansowany, około 5% danych to przypadki pozytywne (zawał wystąpił). Do jak najleszego wytrenowania modelu będzie dobrze zrobiony podział danych.
 
-## 4. Czyszczenie i sanity check danych
+## Czyszczenie i sanity check danych
 
 - Braki danych i strategia ich uzupełniania.
 - Outliery
@@ -46,9 +35,8 @@ Sprawdźmy jak wygląda brak BMI w kontekście tego czy ktoś miał udar czy nie
 
 20% przypadków z udarem to osoby, które nie mają BMI w danych. Brakujące dane w kolumnie BMI zastąpimy medianą zbioru, ponieważ model mógłby się nauczyć, że jeżeli ta kolumna jest pusta to mamy udar.
 
-### Sprawdzenie czy nie mamy dzikich wartości w zbiorze danych
 
-## 5. Eksploracyjna analiza danych (EDA)
+## Eksploracyjna analiza danych (EDA)
 
 - Rozkład zmiennej celu (`stroke`).
 - Analiza cech względem celu.
