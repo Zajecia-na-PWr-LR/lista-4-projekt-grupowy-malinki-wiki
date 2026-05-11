@@ -90,13 +90,11 @@ jupyter notebook notebooks/Stroke_Prediction.ipynb
 
 ## Wyniki
 
-```diff
-- TODO: uzupełnić po zakończeniu eksperymentów -->
 
 | Model | Recall | Precision | F2 | Utility | ROC-AUC |
 |-------|--------|-----------|----|---------|---------|
 | Drzewa decyzyjne | 0.84 | 0.097 | 0.332 | -0.55 | 0.719 |
-| Regresja logistyczna | - | – | – | – | – |
+| Regresja logistyczna | 0.72 | 0.19 | 0.47 | -1.75 | 0.83 |
 | SVM | 0.84 | 0.10 | 0.34 | -0.52 | 0.84 |
 
 ## Autorzy
